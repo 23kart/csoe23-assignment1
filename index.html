@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSK Fansite</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src = "app.js"></script>
+  </head>
+  <body>
+    <div>
+      <p id="content">Welcome to a CSK fanpage!</p>
+      <div id="buttons">
+        <button onclick = "openFunction()">Show Welcome Message</button>
+        <button onclick = "closeFunction()">Hide Welcome Message</button>
+      </div>
+    </div>
+    <p id="header">Achievements</p>
+    <div>
+    <p id = "image">Hover over an image below to display here.<p>
+    </div>
+    <img class = "preview" alt = "IPL 2010" src = "images\champ2010.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "CLT20 2010" src = "images\champ2010cl.jpg"  onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "IPL 2011" src="images\champ2011.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "CLT20 2014" src = "images\champ2014.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "IPL 2018" src = "images\champ2018.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "IPL 2021" src = "images\champ2021.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "4x Purple Cap" src = "images\purplecap.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <img class = "preview" alt = "3x Orange Cap" src = "images\orangecap.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <p id="header">Fun Facts</p>
+    <div id="buttons">
+      <button onclick=triviagen()>Click for some fun facts!</button>
+      <p id="ptrivia">
+
+      </p>
+    </div>
+    <p id="header">Schedule</p>
+    <div class="contt">
+      <a style="text-align:center;">Click <a class="add" onclick="tog()">here</a> to hide the schedule of CSK in IPL 2022.</a><br>
+<div id="schedule">
+<br>
+<table align="center">
+	<tr>
+		<td>Match no.</td>
+		<td>Date</td>
+		<td>Opponent</td>
+		<td>Venue</td>
+		<td>Time (IST)</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>26th March</td>
+		<td>KKR</td>
+		<td>Wankhede</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>31st March</td>
+		<td>LSG</td>
+		<td>Brabourne</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>3rd April</td>
+		<td>PBKS</td>
+		<td>Brabourne</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>9th April</td>
+		<td>SRH</td>
+		<td>DY Patil</td>
+		<td>3:30 PM</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>12th April</td>
+		<td>RCB</td>
+		<td>DY Patil</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>17th April</td>
+		<td>GT</td>
+		<td>Pune</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>21st April</td>
+		<td>MI</td>
+		<td>DY Patil</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>25th April</td>
+		<td>PBKS</td>
+		<td>Wankhede</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>1st May</td>
+		<td>SRH</td>
+		<td>Pune</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>4th May</td>
+		<td>RCB</td>
+		<td>Brabourne</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>8th May</td>
+		<td>DC</td>
+		<td>DY Patil</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>12</td>
+		<td>12th May</td>
+		<td>MI</td>
+		<td>Wankhede</td>
+		<td>7:30 PM</td>
+	</tr>
+	<tr>
+		<td>13</td>
+		<td>15th May</td>
+		<td>GT</td>
+		<td>Wankhede</td>
+		<td>3:30 PM</td>
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>20th May</td>
+		<td>RR</td>
+		<td>Brabourne</td>
+		<td>7:30 PM</td>
+	</tr>
+</table>
+</div>
+<p id="header">Official Tweets</p>
+<center>
+  <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/ChennaiIPL?ref_src=twsrc%5Etfw">Tweets by ChennaiIPL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+<img class="whistle" alt="Whistle" src="images/whistle.jpg" onclick="playSound()">
+<footer>
+    Author: 110119041 <br />
+   <a href="mailto:110119041@nitt.edu">Contact</a>
+</footer>
+  </body>
+</html>
